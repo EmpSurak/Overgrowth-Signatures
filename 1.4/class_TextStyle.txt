@@ -1,0 +1,6 @@
+class TextStyle {
+    int font_face_id;
+    void f();
+    void f();
+    void SetAlignment(int i);
+};

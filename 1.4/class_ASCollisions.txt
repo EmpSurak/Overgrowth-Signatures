@@ -1,0 +1,20 @@
+class ASCollisions {
+    vec3 GetSlidingCapsuleCollision(vec3 start, vec3 end, float radius);
+    void GetSlidingSphereCollision(vec3 pos, float radius);
+    void GetSlidingSphereCollisionDoubleSided(vec3 pos, float radius);
+    void GetScaledSphereCollision(vec3 pos, float radius, vec3 scale);
+    void GetScaledSpherePlantCollision(vec3 pos, float radius, vec3 scale);
+    void GetSlidingScaledSphereCollision(vec3 pos, float radius, vec3 scale);
+    void GetCylinderCollision(vec3 pos, float radius, float height);
+    void GetCylinderCollisionDoubleSided(vec3 pos, float radius, float height);
+    void GetSweptSphereCollision(const vec3 &in start, const vec3 &in end, float radius);
+    void GetSweptSphereCollisionCharacters(vec3 start, vec3 end, float radius);
+    void GetSweptCylinderCollision(vec3 start, vec3 end, float radius, float height);
+    void GetSweptCylinderCollisionDoubleSided(vec3 start, vec3 end, float radius, float height);
+    void GetSweptBoxCollision(vec3 start, vec3 end, vec3 dimensions);
+    void CheckRayCollisionCharacters(vec3 start, vec3 end);
+    vec3 GetRayCollision(vec3 start, vec3 end);
+    void GetObjRayCollision(vec3 start, vec3 end);
+    void GetPlantRayCollision(vec3 start, vec3 end);
+    void GetObjectsInSphere(vec3 pos, float radius);
+};

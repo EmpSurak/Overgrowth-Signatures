@@ -1,0 +1,9 @@
+enum KeyboardInputModeFlag {
+    KIMF_NO = 0,
+    KIMF_MENU = 1,
+    KIMF_PLAYING = 2,
+    KIMF_LEVEL_EDITOR_GENERAL = 4,
+    KIMF_LEVEL_EDITOR_DIALOGUE_EDITOR = 8,
+    KIMF_GUI_GENERAL = 16,
+    KIMF_ANY = 268435455,
+};

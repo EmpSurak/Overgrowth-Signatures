@@ -1,0 +1,11 @@
+class CameraObject {
+    vec3 velocity;
+    bool controlled;
+    bool frozen;
+    bool ignore_mouse_input;
+    bool has_position_initialized;
+    const vec3& GetTranslation();
+    const quaternion& GetRotation();
+    void SetTranslation(const vec3 &in vec);
+    void SetRotation(const quaternion &in quat);
+};

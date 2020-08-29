@@ -1,0 +1,15 @@
+class Campaign {
+    void f();
+    void f(const Campaign &in other);
+    void f();
+    Campaign& opAssign(const Campaign &in other);
+    string GetID();
+    string GetTitle();
+    string GetThumbnail();
+    string GetMainScript();
+    string GetMenuScript();
+    string GetAttribute(string &in id);
+    array<ModLevel>@ GetLevels();
+    ModLevel GetLevel(string &in id);
+    Parameter GetParameter();
+};

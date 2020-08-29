@@ -1,0 +1,37 @@
+class AttackScriptGetter { // Used to query information from an attack xml file
+    AttackScriptGetter@ f();
+    void AttackScriptGetter();
+    void AttackScriptGetter();
+    void Load(const string &in path); // Load an attack xml file into the attack script getter (e.g. "Data/Attacks/knifeslash.xml")
+    string GetPath();
+    string GetSpecial();
+    string GetUnblockedAnimPath();
+    string GetBlockedAnimPath();
+    string GetThrowAnimPath();
+    string GetThrownAnimPath();
+    string GetThrownCounterAnimPath();
+    int IsThrow();
+    int GetHeight();
+    vec3 GetCutPlane();
+    int GetCutPlaneType();
+    bool HasCutPlane();
+    vec3 GetStabDir();
+    int GetStabDirType();
+    bool HasStabDir();
+    int GetDirection();
+    int GetSwapStance();
+    int GetSwapStanceBlocked();
+    int GetUnblockable();
+    int GetFleshUnblockable();
+    int GetAsLayer();
+    string GetAlternate();
+    string GetReactionPath();
+    string GetMaterialEvent();
+    vec3 GetImpactDir();
+    float GetBlockDamage();
+    float GetSharpDamage();
+    float GetDamage();
+    float GetForce();
+    int GetMirrored();
+    int GetMobile();
+};

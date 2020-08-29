@@ -1,0 +1,4 @@
+class MousePress {
+    uint16 s_id;
+    MouseButton button;
+};

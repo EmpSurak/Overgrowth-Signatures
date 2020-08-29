@@ -1,0 +1,17 @@
+class Parameter {
+    void f();
+    void f(const Parameter &in other);
+    void f();
+    Parameter& opAssign(const Parameter &in other);
+    Parameter opIndex( const string &in );
+    Parameter opIndex( const int &in );
+    string getName();
+    bool isEmpty();
+    bool isString();
+    bool isArray();
+    bool isTable();
+    uint size();
+    string asString();
+    bool contains(const string &in value);
+    bool containsName(const string &in value);
+};

@@ -1,0 +1,12 @@
+class CharacterScriptGetter { // Can load a character xml and provide access to its data
+    bool Load(const string &in); // Load a character xml file (e.g. "Data/Characters/guard.xml")
+    string GetObjPath();
+    string GetSkeletonPath();
+    string GetAnimPath(const string &in anim_label);
+    const string& GetTag(const string &in key);
+    string GetAttackPath(const string &in attack_label);
+    void GetTeamString(string &out team_string);
+    float GetHearing();
+    const string& GetChannel(int which_channel); // Get type of given color channel (e.g. "fur", "cloth")
+    bool GetMorphMetaPoints(const string &in label, vec3 &out start, vec3 &out end);
+};

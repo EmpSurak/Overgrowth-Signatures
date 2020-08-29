@@ -1,0 +1,20 @@
+class Hotspot {
+    int GetID();
+    string GetTypeString();
+    bool HasVar(string& in name);
+    bool GetBoolVar(string& in name);
+    int GetIntVar(string& in name);
+    int GetArrayIntVar(const string &in name, int index);
+    float GetFloatVar(string& in name);
+    array<int> @GetConnectedObjects();
+    bool HasFunction(const string &in function_definition);
+    int QueryIntFunction(const string &in function);
+    bool QueryBoolFunction(const string &in function);
+    float QueryFloatFunction(const string &in function);
+    string QueryStringFunction(const string &in function);
+    void SetCollisionEnabled(bool);
+    bool ConnectTo(Object@);
+    bool Disconnect(Object@);
+    void CFireRibbonUpdate(C_ACCEL @, float delta_time, float curr_game_time, vec3 &in pos);
+    void CFireRibbonPreDraw(C_ACCEL @, float curr_game_time);
+};

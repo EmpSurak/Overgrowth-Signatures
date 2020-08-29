@@ -1,0 +1,4 @@
+enum CameraFlags {
+    kEditorCamera = 1,
+    kPreviewCamera = 2,
+};

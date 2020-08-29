@@ -1,0 +1,5 @@
+enum SplitScreenMode {
+    kModeNone = 0,
+    kModeFull = 1,
+    kModeSplit = 2,
+};

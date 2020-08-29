@@ -1,0 +1,12 @@
+class vec4 {
+    float x;
+    float y;
+    float z;
+    float a;
+    void f();
+    void f(const vec4 &in);
+    void f(float, float, float, float);
+    void f(const vec3 &in, float);
+    void f(float);
+    vec4 mix(vec4 a,vec4 b,float alpha);
+};

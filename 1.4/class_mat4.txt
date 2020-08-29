@@ -1,0 +1,18 @@
+class mat4 {
+    void f();
+    void f(const mat4 &in);
+    float &opIndex(uint);
+    const float &opIndex(uint) const;
+    mat4 opMul(mat4) const;
+    vec3 opMul(vec3) const;
+    vec3 opMul(vec4) const;
+    void SetTranslationPart(vec3);
+    vec3 GetTranslationPart() const;
+    void SetRotationPart(mat4);
+    mat4 GetRotationPart() const;
+    void SetRotationX(float);
+    void SetRotationY(float);
+    void SetRotationZ(float);
+    void SetColumn(int, vec3);
+    vec3 GetColumn(int);
+};

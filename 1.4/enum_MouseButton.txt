@@ -1,0 +1,13 @@
+enum MouseButton {
+    LEFT = 0,
+    MIDDLE = 1,
+    RIGHT = 2,
+    FOURTH = 3,
+    FIFTH = 4,
+    SIXTH = 5,
+    SEVENTH = 6,
+    EIGHT = 7,
+    NINTH = 8,
+    TENTH = 9,
+    TWELFTH = 10,
+};

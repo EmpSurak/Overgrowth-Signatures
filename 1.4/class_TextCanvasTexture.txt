@@ -1,0 +1,12 @@
+class TextCanvasTexture {
+    void Create(int width, int height);
+    void ClearTextCanvas();
+    void UploadTextCanvasToTexture();
+    void DebugDrawBillboard(const vec3 &in pos, float scale, int lifespan);
+    void AddText(const string &in, const TextStyle &in, uint char_limit);
+    void AddTextMultiline(const string &in, const TextStyle &in, uint char_limit);
+    void GetTextMetrics(const string &in, const TextStyle &in, TextMetrics &out, uint char_limit);
+    void SetPenPosition(const vec2 &in);
+    void SetPenColor(int r, int g, int b, int a);
+    void SetPenRotation(float rotation);
+};

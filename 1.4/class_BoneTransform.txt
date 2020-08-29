@@ -1,0 +1,12 @@
+class BoneTransform { // An efficient way to define an unscaled transformation
+    quaternion rotation;
+    vec3 origin;
+    void f();
+    void f(const mat4 &in);
+    void f(const BoneTransform &in);
+    bool opEquals(const BoneTransform &in) const;
+    BoneTransform opMul(const BoneTransform &in) const;
+    BoneTransform opMul(const BoneTransform &in) const;
+    vec3 opMul(const vec3 &in) const;
+    mat4 GetMat4() const;
+};

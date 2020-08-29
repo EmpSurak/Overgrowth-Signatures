@@ -1,0 +1,8 @@
+class SpawnerItem {
+    void SpawnerItem();
+    void SpawnerItem();
+    string GetTitle();
+    string GetCategory();
+    string GetPath();
+    string GetThumbnail();
+};

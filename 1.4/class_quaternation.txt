@@ -1,0 +1,17 @@
+class quaternion {
+    float x;
+    float y;
+    float z;
+    float w;
+    void f();
+    void f(const quaternion &in);
+    void f(float, float, float, float);
+    void f(vec4); // Axis-angle (axis.x, axis.y, axis.z, angle_radians)
+    void f();
+    quaternion &opAssign(const quaternion &in);
+    quaternion &opAddAssign(const quaternion &in);
+    bool opEquals(const quaternion &in) const;
+    quaternion opAdd(const quaternion &in) const;
+    quaternion opMul(const quaternion &in) const;
+    vec3 opMul(const vec3 &in) const;
+};

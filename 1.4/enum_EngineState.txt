@@ -1,0 +1,7 @@
+enum EngineState {
+    kEngineNoState = 0,
+    kEngineLevelState = 1,
+    kEngineEditorLevelState = 2,
+    kEngineEngineScriptableUIState = 3,
+    kEngineCampaignState = 4,
+};

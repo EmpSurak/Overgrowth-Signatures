@@ -1,0 +1,8 @@
+class NavPoint {
+    void NavPoint();
+    void NavPoint(const NavPoint &in other);
+    void NavPoint();
+    NavPoint& opAssign(const NavPoint &in other);
+    bool IsSuccess();
+    vec3 GetPoint();
+};

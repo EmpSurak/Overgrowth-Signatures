@@ -1,0 +1,8 @@
+class ivec4 {
+    int x;
+    int y;
+    void f();
+    void f(const ivec4 &in);
+    void f(int, int, int, int);
+    void f(int);
+};

@@ -1,0 +1,19 @@
+class AnimationClient {
+    float GetAnimationEventTime(const string &in event);
+    float GetTimeUntilEvent(const string &in event);
+    void SetAnimationCallback(const string &in function);
+    void AddAnimationOffset(const vec3 &in);
+    void AddAnimationRotOffset(float radians);
+    int AddLayer(const string &in anim_path, float transition_speed, int8 flags);
+    int RemoveLayer(int id, float transition_speed);
+    void SetBlendCoord(const string &in coord_label, float coord_value);
+    void SetLayerOpacity(int id, float opacity);
+    void SetSpeedMult(float);
+    void SetAnimatedItemID(int index, int id);
+    void SetLayerItemID(int layer, int index, int id);
+    const string& GetCurrAnim();
+    float GetNormalizedAnimTime();
+    float GetAnimationSpeed();
+    void RemoveAllLayers();
+    void Reset();
+};

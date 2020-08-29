@@ -1,0 +1,5 @@
+class ReactionScriptGetter {
+    void Load(string path);
+    string GetAnimPath(float severity);
+    int GetMirrored();
+};

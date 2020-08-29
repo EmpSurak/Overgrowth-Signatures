@@ -1,0 +1,27 @@
+class Level {
+    bool HasFunction(const string &in function_definition);
+    int QueryIntFunction(const string &in function);
+    int GetNumObjectives();
+    int GetNumAchievements();
+    string GetObjective(int which);
+    string GetAchievement(int which);
+    void SendMessage(const string& in message);
+    void Execute(string code);
+    const string& GetPath(const string& in key); // Get path from paths xml file
+    bool HasFocus();
+    bool DialogueCameraControl();
+    bool LevelBoundaries();
+    int CreateTextElement();
+    void DeleteTextElement(int which);
+    TextCanvasTexture@ GetTextElement(int which);
+    void GetCollidingObjects(int id, array<int> @array);
+    void ReceiveLevelEvents(int id);
+    void StopReceivingLevelEvents(int id);
+    bool HasVar(const string &in name);
+    int GetIntVar(const string &in name);
+    int GetArrayIntVar(const string &in name, int index);
+    float GetFloatVar(const string &in name);
+    bool GetBoolVar(const string &in name);
+    bool WaitingForInput();
+    ScriptParams@ GetScriptParams();
+};

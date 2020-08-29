@@ -1,0 +1,7 @@
+class SphereCollision {
+    vec3 position;
+    vec3 adjusted_position;
+    float radius;
+    int NumContacts();
+    CollisionPoint GetContact(int);
+};

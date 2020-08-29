@@ -1,0 +1,18 @@
+class vec2 {
+    float x;
+    float y;
+    void f();
+    void f(const vec2 &in);
+    void f(float, float);
+    void f(float);
+    vec2 &opAddAssign(const vec2 &in);
+    vec2 &opSubAssign(const vec2 &in);
+    vec2 &opMulAssign(float);
+    vec2 &opDivAssign(float);
+    bool opEquals(const vec2 &in) const;
+    vec2 opAdd(const vec2 &in) const;
+    vec2 opSub(const vec2 &in) const;
+    vec2 opMul(float) const;
+    vec2 opMul_r(float) const;
+    vec2 opDiv(float) const;
+};

@@ -1,0 +1,4 @@
+class LevelDetails {
+    void f();
+    string GetName();
+};

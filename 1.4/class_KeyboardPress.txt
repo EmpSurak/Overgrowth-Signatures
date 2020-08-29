@@ -1,0 +1,6 @@
+class KeyboardPress {
+    uint16 s_id;
+    uint32 keycode;
+    uint32 scancode;
+    uint16 mod;
+};

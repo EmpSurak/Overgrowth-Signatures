@@ -1,0 +1,23 @@
+class ScriptParams {
+    const string &GetString (const string &in key);
+    float GetFloat (const string &in key);
+    int GetInt (const string &in key);
+    float SetFloat (const string &in key, float val);
+    int SetInt (const string &in key, int);
+    void SetString (const string &in key, const string &in val);
+    void AddInt (const string &in key, int default_val);
+    void AddIntSlider (const string &in key, int default_val, const string &in bounds);
+    void AddFloatSlider (const string &in key, float default_val, const string &in bounds);
+    void AddIntCheckbox (const string &in key, bool default_val);
+    void AddFloat (const string &in key, float default_val);
+    void AddString (const string &in key, const string &in default_val);
+    void ASAddJSONFromString (const string &in key, const string &in default_val);
+    void AddJSON (const string &in key, JSON &in default_val);
+    JSON GetJSON (const string &in key);
+    void Remove (const string &in key);
+    bool HasParam (const string &in key);
+    bool IsParamInt(const string &in key);
+    bool IsParamFloat(const string &in key);
+    bool IsParamString(const string &in key);
+    bool IsParamJSON(const string &in key);
+};

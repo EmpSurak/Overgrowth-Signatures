@@ -1,0 +1,7 @@
+class TextMetrics {
+    int advance_x;
+    int advance_y;
+    int bounds_x;
+    int bounds_y;
+    float ascenderRatio;
+};

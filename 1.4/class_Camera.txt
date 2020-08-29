@@ -1,0 +1,33 @@
+class Camera {
+    vec3 &GetTint();
+    void SetTint(const vec3 &in);
+    vec3 &GetVignetteTint();
+    void SetVignetteTint(const vec3 &in);
+    void FixDiscontinuity();
+    vec3 GetFacing();
+    vec3 GetFlatFacing();
+    vec3 GetMouseRay(); // Direction that mouse cursor is pointing
+    float GetXRotation();
+    void SetXRotation(float);
+    float GetYRotation();
+    void SetYRotation(float);
+    float GetZRotation();
+    void SetZRotation(float);
+    vec3 GetPos();
+    vec3 GetUpVector();
+    void SetPos(vec3);
+    void SetFacing(vec3);
+    void SetUp(vec3);
+    void CalcFacing();
+    void SetVelocity(vec3);
+    void LookAt(vec3 target);
+    void SetFOV(float);
+    float GetFOV();
+    bool GetAutoCamera();
+    void SetDistance(float); // From orbit point, for chase camera
+    void SetInterpSteps(int); // Number of time steps between camera updates
+    int GetFlags();
+    void SetFlags(int);
+    void CalcUp();
+    void SetDOF(float near_blur, float near_dist, float near_transition, float far_blur, float far_dist, float far_transition);
+};

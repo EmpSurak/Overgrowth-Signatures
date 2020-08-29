@@ -1,0 +1,10 @@
+enum ConnectionType {
+    kCTNone = 0,
+    kCTMovementObjects = 1,
+    kCTItemObjects = 2,
+    kCTEnvObjectsAndGroups = 3,
+    kCTPathPoints = 4,
+    kCTPlaceholderObjects = 5,
+    kCTNavmeshConnections = 6,
+    kCTHotspots = 7,
+};

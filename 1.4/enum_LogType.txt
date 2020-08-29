@@ -1,0 +1,8 @@
+enum LogType {
+    fatal = 32,
+    error = 16,
+    warning = 8,
+    info = 4,
+    debug = 2,
+    spam = 1,
+};

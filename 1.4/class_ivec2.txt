@@ -1,0 +1,16 @@
+class ivec2 {
+    int x;
+    int y;
+    void f();
+    void f(const ivec2 &in);
+    void f(int, int);
+    void f(int);
+    ivec2 &opAddAssign(const ivec2 &in);
+    ivec2 &opSubAssign(const ivec2 &in);
+    ivec2 &opMulAssign(int);
+    ivec2 &opDivAssign(int);
+    ivec2 opAdd(const ivec2 &in) const;
+    ivec2 opSub(const ivec2 &in) const;
+    ivec2 opMul(int) const;
+    ivec2 opDiv(int) const;
+};

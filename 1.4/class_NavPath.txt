@@ -1,0 +1,10 @@
+class NavPath {
+    void NavPath();
+    void NavPath(const NavPath &in other);
+    void NavPath();
+    NavPath& opAssign(const NavPath &in other);
+    bool success;
+    int NumPoints();
+    vec3 GetPoint(int);
+    uint8 GetFlag(int);
+};

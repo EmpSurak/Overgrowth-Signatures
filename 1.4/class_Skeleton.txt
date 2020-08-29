@@ -1,0 +1,20 @@
+class Skeleton {
+    vec3 GetCenterOfMass();
+    void SetBoneInflate(int bone_id, float amount);
+    int GetParent(int bone_id);
+    bool IKBoneExists(const string& in);
+    float GetBoneMass(int bone_id);
+    int IKBoneStart(const string& in IK_label);
+    int IKBoneLength(const string& in IK_label);
+    int NumBones();
+    vec3 GetBoneLinearVelocity(int which);
+    mat4 GetBoneTransform(int bone_id);
+    void SetBoneTransform(int bone_id, const mat4 &in transform);
+    vec3 GetPointPos(int bone_id);
+    int GetBonePoint(int bone_id, int which_point);
+    void AddVelocity(const vec3 &in vel);
+    mat4 GetBindMatrix(int bone_id);
+    bool HasPhysics(int bone_id);
+    array<float> @GetConvexHullPoints(int bone_id);
+    BoneTransform ApplyParentRotations(const array<BoneTransform> &in matrices, int id);
+};

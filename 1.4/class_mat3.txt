@@ -1,0 +1,7 @@
+class mat3 {
+    void f();
+    void f(const mat3 &in);
+    float &opIndex(uint);
+    const float &opIndex(uint) const;
+    vec3 opMul(const vec3 &in) const;
+};

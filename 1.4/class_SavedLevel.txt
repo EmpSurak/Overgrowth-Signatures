@@ -1,0 +1,15 @@
+class SavedLevel {
+    void SetValue(const string &in key, const string &in value);
+    const string& GetValue(const string &in key);
+    void SetArrayValue(const string &in key, const int32 index, const string &in value);
+    void DeleteArrayValue(const string &in key, const int32 index);
+    void AppendArrayValueIfUnique(const string &in key, const string &in val);
+    void AppendArrayValue(const string &in key, const string &in val);
+    uint32 GetArraySize(const string &in key);
+    string GetArrayValue(const string &in key, const int32 index);
+    array<string>@ GetArray(const string &in key);
+    void SetInt32Value(const string &in key, const int32 value);
+    int32 GetInt32Value(const string &in key);
+    bool HasInt32Value(const string &in key);
+    void SetKey(const string &in modsource_id, const string &in campaign_name, const string &in level_name);
+};

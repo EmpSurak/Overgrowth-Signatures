@@ -1,0 +1,9 @@
+class JSON {
+    void JSON();
+    void JSON();
+    JSON& opAssign(const JSON &in other);
+    bool parseString(string &in);
+    bool parseFile(string &in);
+    string writeString(bool=false);
+    JSONValue& getRoot();
+};

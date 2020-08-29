@@ -1,0 +1,7 @@
+class CollisionPoint {
+    vec3 position;
+    vec3 normal;
+    vec3 custom_normal;
+    int id;
+    int tri;
+};

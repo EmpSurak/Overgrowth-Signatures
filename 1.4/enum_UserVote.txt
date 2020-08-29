@@ -1,0 +1,6 @@
+enum UserVote {
+    k_VoteUnknown = 0,
+    k_VoteNone = 1,
+    k_VoteUp = 2,
+    k_VoteDown = 3,
+};

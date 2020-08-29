@@ -1,0 +1,13 @@
+class ModLevel {
+    void f();
+    void f(const ModLevel &in other);
+    void f();
+    ModLevel& opAssign(const ModLevel &in other);
+    string GetTitle();
+    string GetID();
+    string GetThumbnail();
+    string GetPath();
+    LevelDetails GetDetails();
+    bool CompletionOptional();
+    Parameter GetParameter();
+};

@@ -1,0 +1,5 @@
+class ModID {
+    void f();
+    void f();
+    bool Valid();
+};

@@ -1,0 +1,3 @@
+enum TextAtlasFlags {
+    kSmallLowercase = 1,
+};

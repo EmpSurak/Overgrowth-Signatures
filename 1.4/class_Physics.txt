@@ -1,0 +1,3 @@
+class Physics {
+    vec3 gravity_vector;
+};

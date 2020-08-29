@@ -1,0 +1,3 @@
+class ASContext {
+    void PrintGlobalVars();
+};

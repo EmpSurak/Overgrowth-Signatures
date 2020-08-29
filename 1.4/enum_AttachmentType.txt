@@ -1,0 +1,6 @@
+enum AttachmentType {
+    _at_attachment = 2,
+    _at_grip = 0,
+    _at_sheathe = 1,
+    _at_unspecified = 3,
+};

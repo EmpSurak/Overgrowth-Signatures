@@ -1,0 +1,8 @@
+class EnvObject {
+    int GetID();
+    void CreateLeaf(vec3 target_position, vec3 velocity, int iterations); // Spawn leaf particles from random point on object's surface; more iterations = closer to target_position
+    int GetCollisionFace(int index);
+    vec3 GetCollisionVertex(int index);
+    int GetNumLedgeLines();
+    int GetLedgeLine(int index);
+};

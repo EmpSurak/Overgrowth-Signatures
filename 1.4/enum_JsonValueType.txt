@@ -1,0 +1,10 @@
+enum JsonValueType {
+    JSONnullValue = 0,
+    JSONintValue = 1,
+    JSONuintValue = 2,
+    JSONrealValue = 3,
+    JSONstringValue = 4,
+    JSONbooleanValue = 5,
+    JSONarrayValue = 6,
+    JSONobjectValue = 7,
+};

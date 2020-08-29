@@ -1,0 +1,5 @@
+class ControllerPress {
+    uint32 s_id;
+    ControllerInput input;
+    float depth;
+};

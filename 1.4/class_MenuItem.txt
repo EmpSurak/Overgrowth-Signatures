@@ -1,0 +1,8 @@
+class MenuItem {
+    void f();
+    void f();
+    string GetTitle();
+    string GetCategory();
+    string GetPath();
+    string GetThumbnail();
+};

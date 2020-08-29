@@ -1,0 +1,4 @@
+class PathPointObject {
+    int NumConnectionIDs();
+    int GetConnectionID(int which);
+};

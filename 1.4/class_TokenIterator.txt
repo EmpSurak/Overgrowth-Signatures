@@ -1,0 +1,5 @@
+class TokenIterator {
+    void Init();
+    bool FindNextToken(const string& in);
+    string GetToken(const string& in);
+};
